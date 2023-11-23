@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
 a {
@@ -43,10 +44,17 @@ a:hover {
     box-shadow: 1px 0 2px black;
 }
 
+:root {
+    --lblue: #B4D0E7;
+}
+
 /* Header */
 header {
     background-color: white;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .hd-container {
@@ -65,3 +73,49 @@ header a {
 }
 
 /* Jumbotron */
+.jumbotron {
+    background-color: var(--lblue);
+}
+
+.jt-container {
+    width: 60%;
+    /* height: 600px; */
+    margin: 80px auto 0;
+}
+
+h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding: 40px 0;
+}
+
+.jt-text {
+    width: 30%;
+    position: relative;
+}
+
+.jtt-main, .jtt-button {
+    padding-bottom: 40px;
+}
+
+.jtt-secondary {
+    padding-bottom: 120px;
+}
+
+i.fa-arrow-down {
+    font-size: 3rem;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom:0px;
+}
+
+/*
+.jt-col > img {
+    max-width: 70%;
+    overflow: visible;
+    align-items: flex-start;
+} */
+
