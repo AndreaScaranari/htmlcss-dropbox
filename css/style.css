@@ -18,6 +18,21 @@ a:hover {
     text-decoration: underline;
 }
 
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 /* Utils */
 .fcc {
     display: flex;
@@ -55,6 +70,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .hd-container {
@@ -62,10 +78,6 @@ header {
     padding: 20px;
     justify-content: space-between;
 
-}
-
-header li {
-    list-style-type: none;
 }
 
 header a {
@@ -120,9 +132,105 @@ i.fa-arrow-down {
 }
 
 .jt-img img {
-    max-width: 120%;
+    max-width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+/* Find your business plan */
+.fyp-container {
+    margin-top: 150px;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+.fatturazione ul {
+    justify-content: flex-start;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.fatturazione li {
+    list-style-type: none;
+}
+
+.fyp-col {
+    width: calc(100%/3);
+    border: 1px solid grey;
+    margin: 0 20px;
+}
+
+.fyp-row {
+    margin: 0 -20px;
+}
+
+.fyp-hd {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.fyp-card {
+    padding: 0px 20px;
+}
+
+h3 {
+    padding-top: 40px;
+}
+
+h4 {
+    font-size: 0.8rem;
+    padding: 20px 0;
+}
+
+.fyp-card > * {
+    padding-bottom: 40px;
+}
+
+.fyp-card li {
+    padding: 10px 0;
+}
+
+.n-utenti::before {
+    font: var(--fa-font-solid);
+    content: "\f007";
+    /* html <i class="fa-solid fa-user"></i> */
+}
+
+.n-space::before {
+    font: var(--fa-font-solid);
+    content: "\f07b";
+    /* html <i class="fa-solid fa-folder"></i> */
+}
+
+.n-share::before {
+    font: var(--fa-font-solid);
+    content: "\f1e0";
+    /* html <i class="fa-solid fa-share-nodes"> </i>*/
+} 
+
+.fyp-button {
+    text-align: center;
+}
+
+.fyp-buynow {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+.fyp-checklist::before {
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    color: #0061FF;
+    /* html <i class="fa-solid fa-check"> </i>*/
+}
+
+.fyp-col hr {
+    padding-bottom: 0;
+    width: 30%;
+    margin-bottom: 30px;
 }
 
