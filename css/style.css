@@ -51,7 +51,7 @@ li {
 .style-button {
     background-color: #0061FF;
     color: #fff;
-    padding: 6px 12px;
+    padding: 10px 20px;
 }
 
 .style-button:hover {
@@ -61,6 +61,10 @@ li {
 
 :root {
     --lblue: #B4D0E7;
+}
+
+.border {
+    border: 1px solid grey;
 }
 
 /* Header */
@@ -159,12 +163,12 @@ h2 {
 
 .fyp-col {
     width: calc(100%/3);
-    border: 1px solid grey;
-    margin: 0 20px;
+    margin: 0 20px 40px;
 }
 
 .fyp-row {
     margin: 0 -20px;
+    align-items: stretch;
 }
 
 .fyp-hd {
@@ -200,6 +204,12 @@ h4 {
     /* html <i class="fa-solid fa-user"></i> */
 }
 
+.n-plural::before {
+    font: var(--fa-font-solid);
+    content: "\f0c0";
+    /* <i class="fa-solid fa-users"></i> */
+}
+
 .n-space::before {
     font: var(--fa-font-solid);
     content: "\f07b";
@@ -212,7 +222,11 @@ h4 {
     /* html <i class="fa-solid fa-share-nodes"> </i>*/
 } 
 
-.fyp-button {
+.fyp-button .style-button,
+.fypw-button .style-button {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -234,3 +248,22 @@ h4 {
     margin-bottom: 30px;
 }
 
+/* Horizontal fyp */
+.fyp-wide {
+    margin-bottom: 80px;
+}
+
+.side-container {
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.fypw-button {
+    width: 30%;
+    padding-top: 40px;
+}
+
+.fyp-wide h4,
+.fyp-wide p {
+    padding-bottom: 40px;
+}
