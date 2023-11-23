@@ -1,3 +1,4 @@
+/* Generics */
 * {
     margin: 0;
     padding: 0;
@@ -7,3 +8,60 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Utils */
+.fcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gapmin {
+    gap: 20px;
+}
+
+.gapbig {
+    gap: 30px;
+}
+
+.style-button {
+    background-color: #0061FF;
+    color: #fff;
+    padding: 6px 12px;
+}
+
+.style-button:hover {
+    text-decoration: none;
+    box-shadow: 1px 0 2px black;
+}
+
+/* Header */
+header {
+    background-color: white;
+    position: sticky;
+}
+
+.hd-container {
+    height: 80px;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    color: black;
+}
+
+/* Jumbotron */
