@@ -44,10 +44,6 @@ li {
     gap: 20px;
 }
 
-.gapbig {
-    gap: 30px;
-}
-
 .style-button {
     background-color: #0061FF;
     color: #fff;
@@ -99,9 +95,9 @@ header a {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 900;
-    padding: 40px 0;
+    padding: 80px 0 40px;
 }
 
 .jt-col {
@@ -111,6 +107,7 @@ h1 {
 .jt-text {
     width: 30%;
     position: relative;
+    font-size: 0.9rem;
 }
 
 .jtt-main, .jtt-button {
@@ -144,11 +141,12 @@ i.fa-arrow-down {
 
 /* Find your business plan */
 .fyp-container {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 h2 {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    font-size: 2.5rem;
 }
 
 .fatturazione ul {
@@ -178,16 +176,22 @@ h2 {
 }
 
 .fyp-card {
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 h3 {
     padding-top: 40px;
+    font-size: 1.5rem;
 }
 
 h4 {
     font-size: 0.8rem;
     padding: 20px 0;
+    font-weight: 800;
+}
+
+.fyp-timing {
+    font-size: 0.8rem;
 }
 
 .fyp-card > * {
@@ -196,6 +200,14 @@ h4 {
 
 .fyp-card li {
     padding: 10px 0;
+    font-size: 0.9rem;    
+    padding-left: 1.28571429em;
+    text-indent: -1.28571429em;
+}
+
+.fyp-card p,
+.fyp-text p {
+    font-size: 0.9rem;
 }
 
 .n-utenti::before {
@@ -256,6 +268,7 @@ h4 {
 .side-container {
     padding: 0 20px;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .fypw-button {
