@@ -315,7 +315,7 @@ h4 {
 /* Dropbox Business Grid */
 .dpb-row {
     flex-wrap: wrap;
-    /* margin: 0 -10px; */
+    margin: 0 -20px;
 }
 
 .dpb-col {
@@ -330,5 +330,48 @@ h4 {
 
 .dpb-col h3 {
 padding: 20px 0;
+}
+
+/* Scopri di più sui nostri clienti */
+.mc-hd {
+    padding: 100px 0;
+    margin-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mc-hd a {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+.mc-sqrd {
+    height: 600px;
 
 }
+
+
+.mcf-container {
+    background-color: var(--lblue);
+}
+
+.mc-ftr {
+    color: #61082B;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.mc-ftr h2 {
+    width:60%;
+    padding: 0;
+}
+
+.mc-ftr a {
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+}
+
