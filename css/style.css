@@ -347,9 +347,7 @@ padding: 20px 0;
 
 .mc-sqrd {
     height: 600px;
-
 }
-
 
 .mcf-container {
     background-color: var(--lblue);
@@ -373,5 +371,100 @@ padding: 20px 0;
     width: 30%;
     text-align: center;
     margin-top: 10px;
+    background-color: #FFFFFF;
+    color: black;
 }
 
+.sqrd {
+    width: calc(100%/3);
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.left > *,
+.right > * {
+    height: 50%;
+    width: 50%;
+}
+
+.sqrd img {
+    max-width: 50%;
+    display: block;
+}
+
+.left img,
+.right img {
+    filter: invert(1); 
+}
+
+/* Con lo pseudo-elemento, prima che scoprissi "invert" riguardando la lezione.
+.designit::before {
+    content:"";
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-image: url(../assets/img/designit.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+} */
+
+.designit {
+    background-color: #A2D39B;
+    /* position: relative; 
+    rimossa per non-uso pseudoelemento*/
+}
+
+.asu {
+    background-color: #61082B;
+}
+
+.uf {
+    background-color: #0093CE;
+}
+
+.topps {
+    background-color: #FF1C1C;
+}
+
+.wbr {
+    background-color: #D5001F;
+}
+
+.hcorp {
+    background-color: #B4D0E7;
+}
+
+.lonp {
+    background-color: #0D2481;
+}
+
+.cco {
+    background-color: #FFD830;
+}
+
+.mid {
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.mid > * {
+    margin-bottom: 40px;
+}
+
+.mid img {
+    width: 50%;
+}
+
+.mid hr {
+    width: 20%;
+}
+
+.mid p {
+    font-size: 1rem;
+}
