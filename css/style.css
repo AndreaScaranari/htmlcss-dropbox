@@ -33,6 +33,10 @@ li {
     -webkit-font-smoothing: antialiased;
 }
 
+p { 
+    font-size: 0.9rem;
+}
+
 /* Utils */
 .fcc {
     display: flex;
@@ -279,4 +283,31 @@ h4 {
 .fyp-wide h4,
 .fyp-wide p {
     padding-bottom: 40px;
+}
+
+/* Find a partner */
+.find-a-partner {
+    align-items: flex-start;
+    gap: 40px;
+    margin: 160px 0;
+}
+
+.find-a-partner img {
+    max-width: 60%;
+    display: block;
+}
+
+.fap-text h3 {
+    padding-bottom: 20px;
+}
+
+.fap-text p {
+    padding-bottom: 50px;
+}
+
+.fap-button .style-button {
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    font-size: 0.9rem;
 }
