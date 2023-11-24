@@ -311,3 +311,24 @@ h4 {
     border: 1px solid grey;
     font-size: 0.9rem;
 }
+
+/* Dropbox Business Grid */
+.dpb-row {
+    flex-wrap: wrap;
+    /* margin: 0 -10px; */
+}
+
+.dpb-col {
+    width: calc(100%/3);
+    padding: 20px;
+}
+
+.dpb-col img {
+    width: 100%;
+    display: block;
+}
+
+.dpb-col h3 {
+padding: 20px 0;
+
+}
