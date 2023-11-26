@@ -468,3 +468,76 @@ padding: 20px 0;
 .mid p {
     font-size: 1rem;
 }
+
+/* FAQ Area */
+.faq-container {
+    width: 50%;
+    margin: 120px auto;
+}
+
+.faq-container h2 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.question {
+    border-bottom: 1px solid black;
+    line-height: 80px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.question i {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+.ftr-container {
+    width: 60%;
+    margin: 0 auto 0;
+}
+
+.ftr-row {
+    padding: 100px 0; 
+}
+
+.ftr-col {
+    width: 20%;
+}
+
+footer h3 {
+    padding: 0 0 30px;
+
+}
+
+footer a {
+    color: white;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+footer hr {
+    width: 10%;
+}
+
+.language {
+    font-weight: 300;
+    padding: 50px 0;
+}
+
+.fa-earth-americas {
+    margin-right: 5px;
+}
+
+.fa-caret-up {
+    font-size: 0.8rem;
+}
