@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    position: relative;
 }
 
 a {
@@ -44,10 +43,6 @@ p {
     align-items: center;
 }
 
-.gapmin {
-    gap: 20px;
-}
-
 .style-button {
     background-color: #0061FF;
     color: #fff;
@@ -68,24 +63,24 @@ p {
 }
 
 /* Header */
-header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
 .hd-container {
     height: 80px;
-    padding: 20px;
+    background-color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
     justify-content: space-between;
-
+    padding: 0px 20px;
+    box-shadow: 0 1px 3px #666;
 }
 
 header a {
     color: black;
+}
+
+header ul {
+    gap: 20px;
 }
 
 /* Jumbotron */
@@ -95,16 +90,17 @@ header a {
 
 .jt-container {
     width: 60%;
-    margin: 80px auto 0;
+    margin: 0 auto;
+    transform: translateY(80px);
 }
 
 h1 {
     font-size: 4.5rem;
     font-weight: 900;
-    padding: 80px 0 40px;
+    padding-bottom: 40px;
 }
 
-.jt-col {
+.jt-row {
     align-items: flex-start;
 }
 
@@ -124,23 +120,22 @@ h1 {
 
 i.fa-arrow-down {
     font-size: 3rem;
-    font-weight: 800;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
 .jt-img {
-    position: relative;
-    height: 100%;
-    width: 80%;
+    /* position: relative; */
+    /* height: 100%; */
+    width: 70%;
 }
 
 .jt-img img {
     max-width: 100%;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
 }
 
 /* Find your business plan */
@@ -397,7 +392,7 @@ padding: 20px 0;
     filter: invert(1); 
 }
 
-/* Con lo pseudo-elemento, prima che scoprissi "invert" riguardando la lezione.
+/* Con lo pseudo-elemento, prima che scoprissi "invert".
 .designit::before {
     content:"";
     display: block;
@@ -540,4 +535,9 @@ footer hr {
 
 .fa-caret-up {
     font-size: 0.8rem;
+}
+
+.fa-caret-up:hover,
+.fa-chevron-down:hover {
+    cursor:pointer;
 }
