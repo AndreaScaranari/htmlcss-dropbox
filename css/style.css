@@ -322,16 +322,16 @@ h4 {
 .right > * {
     height: 50%;
     width: 50%;
+    border: 10px solid transparent;
 }
 
 .sqrd img {
-    max-width: 50%;
-    display: block;
+    width: 50%;
 }
 
 .left img,
 .right img {
-    filter: invert(1); 
+    filter: invert(1);
 }
 
 .designit {
@@ -462,4 +462,12 @@ footer hr {
 .fa-caret-up:hover,
 .fa-chevron-down:hover {
     cursor:pointer;
+}
+
+/* BONUS */
+
+.sqrd.left > *:hover,
+.sqrd.right > *:hover {
+    cursor: pointer;
+    border: 10px solid rgba(0, 0, 0, 0.5);
 }
