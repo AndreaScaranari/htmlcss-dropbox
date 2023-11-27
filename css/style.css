@@ -14,7 +14,7 @@ a {
     color: black;
 }
 
-a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -396,20 +396,13 @@ h4 {
 .faq-container h2,
 .question {
     border-bottom: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.question {
+.question > * {
     line-height: 80px;
     font-size: 1rem;
-    position: relative;
-}
-
-.question i {
-    font-size: 0.8rem;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    translate: 0 -50%;
 }
 
 /* Footer */
@@ -466,8 +459,42 @@ footer hr {
 
 /* BONUS */
 
+/* Quadratoni con bordi */
 .sqrd.left > *:hover,
 .sqrd.right > *:hover {
     cursor: pointer;
     border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Header con bordi */
+header li {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid transparent;
+}
+
+.borderwide {
+    line-height: 80px;
+}
+
+.borderwide:hover {
+    text-decoration: none;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Div a comparsa tra le FAQ */
+.question i {
+    display: block;
+    padding-left: 30px;
+}
+
+.answer {
+    display: none;
+    line-height: 1.2rem;
+    padding-bottom: 30px;
+}
+
+.question:hover .answer {
+    display: block;
 }
