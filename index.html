@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="hd-container fcc">
+        <!-- Left area -->
         <nav class="hd-left">
             <ul class="fcc">
                 <li><a href="#"><img src="assets/img/logo-small.png" alt=""></a></li>
@@ -31,6 +33,7 @@
                 <li><a href="#">Piani e Prezzi</a></li>
             </ul>
         </nav>
+        <!-- Right Area -->
         <nav class="hd-right">
             <ul class="fcc">
                 <li><a href="#">Supporto</a></li>
@@ -42,18 +45,21 @@
     </header>
 
     <main>
-        <section class="jumbotron" id="jumbotron">
+        <!-- Jumbotron -->
+        <section id="jumbotron">
             <div class="jt-container">
-                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                <h1 class="pb-40">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="jt-row fcc">
-                    <div class="jt-text">
-                        <p class="jtt-main">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                        <div class="jtt-button"><a href="#" class="style-button">Inizia la tua prova gratuita</a></div>
-                        <p class="jtt-secondary">Annulla in qualsiasi momento</p>
-                        <i class="fa-solid fa-arrow-down"></i>
+                    <!-- Lato con testo -->
+                    <div class="jt-text col-30">
+                        <p class="jtt-main pb-40">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                        <div class="jtt-button pb-40"><a href="#" class="style-button">Inizia la tua prova gratuita</a></div>
+                        <p class="jtt-secondary pb-40">Annulla in qualsiasi momento</p>
+                        <i class="fa-solid fa-arrow-down fa-3x"></i>
                     </div>
-                    <div class="jt-img">
-                          <img src="assets/img/jumbo.png" alt="Interfaccia del programma">
+                    <!-- Lato con IMG -->
+                    <div class="jt-img col-70">
+                          <img src="assets/img/jumbo.png" alt="Interfaccia Dropbox">
                     </div>
                   
                 </div>
@@ -61,7 +67,8 @@
         </section>
 
         <div class="container">
-            <div class="fyp-container">
+            <div id="fyp-container">
+                <!-- Header sezione -->
                 <h2>Trova il piano business che fa per te</h2>
                 <div class="fatturazione">
                     <ul class="fcc">
@@ -70,102 +77,143 @@
                     </ul>
                 </div>
 
+                <!-- Piani business -->
                 <div class="fyp-row fcc">
-                    <div class="fyp-col border">
-                        <div class="fyp-hd">
-                            <i class="fa-solid fa-user"></i> Singolo
-                        </div>
-                        <div class="fyp-card">
-                            <div>
-                                <h3>Professional</h3>
-                                <h4 class="fyp-price">€ 12,00</h4>
-                                <div class="fyp-timing">/mese</div>
-                            </div>    
-                            <ul>
-                                <li class="n-utenti"> 1 utente</li>
-                                <li class="n-space"> 5 TB di spazio di archiviazione sicuro</li>
-                                <li class="n-share"> Funzioni di produttività premium e condivisione file semplice e sicura</li>
-                            </ul>
-                            <div class="fyp-button">
-                                <a href="#" class="style-button">Prova gratis per 30 giorni</a>
+                    <!-- Box Verticali -->
+                    <!-- <div class="fyp-col">
+                        <div class="fyp-card border">
+                            <div class="fyp-hd">
+                                <i class="fa-solid fa-user"></i> Singolo
                             </div>
-                            <p >oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
-                            <hr>
-                            <div>
-                                <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                            <div class="fyp-main">
+                                <div>
+                                    <h3>Professional</h3>
+                                    <h4 class="fyp-price">€ 12,00</h4>
+                                    <div class="fyp-timing">/mese</div>
+                                </div>    
                                 <ul>
-                                    <li class="fyp-checklist"> Invia file fino a 100GB con Dropbox Transfert</li>
-                                    <li class="fyp-checklist"> Cartella offline su dispositivi mobili</li>
+                                    <li class="n-utenti"> 1 utente</li>
+                                    <li class="n-space"> 5 TB di spazio di archiviazione sicuro</li>
+                                    <li class="n-share"> Funzioni di produttività premium e condivisione file semplice e sicura</li>
                                 </ul>
+                                <div class="fyp-button">
+                                    <a href="#" class="style-button">Prova gratis per 30 giorni</a>
+                                </div>
+                                <p >oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
+                                <hr>
+                                <div>
+                                    <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                                    <ul>
+                                        <li class="fyp-checklist"> Invia file fino a 100GB con Dropbox Transfert</li>
+                                        <li class="fyp-checklist"> Cartella offline su dispositivi mobili</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="fyp-col">
+                        <div class="fyp-card border">
+                            <div class="fyp-hd">
+                                <i class="fa-solid fa-user"></i> Singolo
+                            </div>
+                            <div class="fyp-main">
+                                <div>
+                                    <h3>Professional</h3>
+                                    <h4 class="fyp-price">€ 12,00</h4>
+                                    <div class="fyp-timing">/mese</div>
+                                </div>    
+                                <ul class="fa-ul" style="--fa-li-margin: 1em;">
+                                    <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>1 utente</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-users"></i></span> 5 TB di spazio di archiviazione sicuro</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                </ul>
+                                <div class="fyp-button">
+                                    <a href="#" class="style-button">Prova gratis per 30 giorni</a>
+                                </div>
+                                <p >oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
+                                <hr>
+                                <div>
+                                    <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                                    <ul class="fa-ul" style="--fa-li-margin: 1em;">
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Invia file fino a 100GB con Dropbox Transfert</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Cartella offline su dispositivi mobili</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="fyp-col border">
-                        <div class="fyp-hd">
-                            <i class="fa-solid fa-users"></i> Team
-                        </div>
-                        <div class="fyp-card">
-                            <div>
-                                <h3>Advanced</h3>
-                                <h4 class="fyp-price">€ 18,00</h4>
-                                <div class="fyp-timing">/mese</div>
-                            </div>    
-                            <ul>
-                                <li class="n-plural"> 3 o più utenti</li>
-                                <li class="n-space"> Tutto lo spazio di cui ha bisogno il tuo team</li>
-                                <li class="n-share"> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
-                            </ul>
-                            <div class="fyp-button">
-                                <a href="#" class="style-button">Prova gratis per 30 giorni</a>
+                    <div class="fyp-col">
+                        <div class="fyp-card border">
+                            <div class="fyp-hd">
+                                <i class="fa-solid fa-users"></i> Team
                             </div>
-                            <p>oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
-                            <hr>
-                            <div>
-                                <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                            <div class="fyp-main">
+                                <div>
+                                    <h3>Advanced</h3>
+                                    <h4 class="fyp-price">€ 18,00</h4>
+                                    <div class="fyp-timing">/mese</div>
+                                </div>    
                                 <ul>
-                                    <li class="fyp-checklist"> Nessun limite di spazio per i file</li>
-                                    <li class="fyp-checklist"> Cartella offline su dispositivi mobili</li>
-                                    <li class="fyp-checklist"> Risparmio del 50% rispetto alle iscrizione singole</li>
-                                    <li class="fyp-checklist"> Possibilità di inserire nuovi membri del team</li>
-                                    <li class="fyp-checklist"> Gestione dei permessi in base ai ruoli</li>
+                                    <li class="n-plural"> 3 o più utenti</li>
+                                    <li class="n-space"> Tutto lo spazio di cui ha bisogno il tuo team</li>
+                                    <li class="n-share"> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
                                 </ul>
+                                <div class="fyp-button">
+                                    <a href="#" class="style-button">Prova gratis per 30 giorni</a>
+                                </div>
+                                <p>oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
+                                <hr>
+                                <div>
+                                    <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                                    <ul>
+                                        <li class="fyp-checklist"> Nessun limite di spazio per i file</li>
+                                        <li class="fyp-checklist"> Cartella offline su dispositivi mobili</li>
+                                        <li class="fyp-checklist"> Risparmio del 50% rispetto alle iscrizione singole</li>
+                                        <li class="fyp-checklist"> Possibilità di inserire nuovi membri del team</li>
+                                        <li class="fyp-checklist"> Gestione dei permessi in base ai ruoli</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="fyp-col border">
-                        <div class="fyp-hd">
-                            <i class="fa-solid fa-building"></i> Azienda
-                        </div>
-                        <div class="fyp-card">
-                            <div>
-                                <h3>Enterprise</h3>
-                                <h4 class="fyp-price">Contattaci</h4>
-                                <div class="fyp-timing">-</div>
-                            </div>    
-                            <ul>
-                                <li class="n-utenti"> 10 o più utenti</li>
-                                <li class="n-space"> Soluzioni personalizzabili per la tua azienda</li>
-                                <li class="n-share"> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
-                            </ul>
-                            <div class="fyp-button">
-                                <a href="#" class="style-button">Contattaci</a>
+                    <div class="fyp-col">
+                        <div class="fyp-card border">
+                            <div class="fyp-hd">
+                                <i class="fa-solid fa-building"></i> Azienda
                             </div>
-                            <p >oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
-                            <hr>
-                            <div>
-                                <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                            <div class="fyp-main">
+                                <div>
+                                    <h3>Enterprise</h3>
+                                    <h4 class="fyp-price">Contattaci</h4>
+                                    <div class="fyp-timing">-</div>
+                                </div>    
                                 <ul>
-                                    <li class="fyp-checklist"> Cartelle offline su dispositivi mobili</li>
-                                    <li class="fyp-checklist"> Servizio assistenza 24/h</li>
-                                    <li class="fyp-checklist"> Possibilità di personalizzazione totale</li>
+                                    <li class="n-utenti"> 10 o più utenti</li>
+                                    <li class="n-space"> Soluzioni personalizzabili per la tua azienda</li>
+                                    <li class="n-share"> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                                 </ul>
-                            </div>
+                                <div class="fyp-button">
+                                    <a href="#" class="style-button">Contattaci</a>
+                                </div>
+                                <p >oppure <a href="#" class="fyp-buynow">acquista ora</a></p>
+                                <hr>
+                                <div>
+                                    <h4 class="fyp-salienti">Punti Salienti del piano</h4>
+                                    <ul>
+                                        <li class="fyp-checklist"> Cartelle offline su dispositivi mobili</li>
+                                        <li class="fyp-checklist"> Servizio assistenza 24/h</li>
+                                        <li class="fyp-checklist"> Possibilità di personalizzazione totale</li>
+                                    </ul>
+                                </div>
+                            </div>       
                         </div>
                     </div>
                 </div>
 
+                <!-- Box orizzontale -->
                 <div class="fyp-wide border">
                     <div class="fyp-hd">
                         <i class="fa-solid fa-building"></i> Team
