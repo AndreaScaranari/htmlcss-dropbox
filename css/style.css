@@ -498,3 +498,25 @@ header li {
 .question:hover .answer {
     display: block;
 }
+
+/* Menu a tendina */
+/* NON COMPLETO PURTROPPO CAUSA TEMPO */
+.borderwide .tendina {
+  position: absolute;
+  top: 100%;
+  width: 80px;
+  display: none;
+  background-color: var(--gray);
+}
+
+.borderwide:hover .tendina {
+    display: block;
+}
+
+.tendina li {
+    border: 1px solid white;
+}
+
+.tendina li:hover {
+    background-color: #aaa;
+}
