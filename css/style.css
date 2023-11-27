@@ -187,30 +187,6 @@ h4 {
     font-size: 0.9rem;
 }
 
-.n-utenti::before {
-    font: var(--fa-font-solid);
-    content: "\f007";
-    /* html <i class="fa-solid fa-user"></i> */
-}
-
-.n-plural::before {
-    font: var(--fa-font-solid);
-    content: "\f0c0";
-    /* <i class="fa-solid fa-users"></i> */
-}
-
-.n-space::before {
-    font: var(--fa-font-solid);
-    content: "\f07b";
-    /* html <i class="fa-solid fa-folder"></i> */
-}
-
-.n-share::before {
-    font: var(--fa-font-solid);
-    content: "\f1e0";
-    /* html <i class="fa-solid fa-share-nodes"> </i>*/
-} 
-
 .fyp-button .style-button,
 .fypw-button .style-button {
     display: block;
@@ -230,11 +206,8 @@ h4 {
     margin-bottom: 30px;
 }
 
-.fyp-checklist::before {
-    font: var(--fa-font-solid);
-    content: "\f00c";
+.fa-check {
     color: #0061FF;
-    /* html <i class="fa-solid fa-check"> </i>*/
 }
 
 
@@ -254,11 +227,6 @@ h4 {
     padding-top: 40px;
 }
 
-.fyp-wide h4,
-.fyp-wide p {
-    padding-bottom: 40px;
-}
-
 /* Find a partner */
 .find-a-partner {
     align-items: flex-start;
@@ -268,7 +236,6 @@ h4 {
 
 .find-a-partner img {
     max-width: 60%;
-    display: block;
 }
 
 .fap-text h3 {
@@ -293,20 +260,14 @@ h4 {
 }
 
 .dpb-col {
-    width: calc(100%/3);
     padding: 20px;
 }
 
-.dpb-col img {
-    width: 100%;
-    display: block;
-}
-
 .dpb-col h3 {
-padding: 20px 0;
+    padding: 20px 0;
 }
 
-/* Scopri di più sui nostri clienti */
+/* Header Scopri di più sui nostri clienti */
 .mc-hd {
     padding: 100px 0;
     margin-top: 50px;
@@ -314,11 +275,16 @@ padding: 20px 0;
     margin: 0 auto;
 }
 
+.mc-hd h2 {
+    padding-bottom: 60px;
+}
+
 .mc-hd a {
     text-decoration: underline;
     color: #0000EE;
 }
 
+/* Footer Scopri di picture sui nostri clienti */
 .mcf-container {
     background-color: var(--lblue);
 }
@@ -368,27 +334,8 @@ padding: 20px 0;
     filter: invert(1); 
 }
 
-/* Con lo pseudo-elemento, prima che scoprissi "invert".
-.designit::before {
-    content:"";
-    display: block;
-    width: 50%;
-    height: 50%;
-    background-image: url(../assets/img/designit.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(1);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-} */
-
 .designit {
     background-color: #A2D39B;
-    /* position: relative; 
-    rimossa per non-uso pseudoelemento*/
 }
 
 .asu {
@@ -446,13 +393,12 @@ padding: 20px 0;
     margin: 120px auto;
 }
 
-.faq-container h2 {
-    padding-bottom: 40px;
+.faq-container h2,
+.question {
     border-bottom: 1px solid black;
 }
 
 .question {
-    border-bottom: 1px solid black;
     line-height: 80px;
     font-size: 1rem;
     position: relative;
@@ -474,7 +420,7 @@ footer {
 
 .ftr-container {
     width: 60%;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 .ftr-row {
@@ -486,7 +432,7 @@ footer {
 }
 
 footer h3 {
-    padding: 0 0 30px;
+    padding-bottom: 30px;
 
 }
 
