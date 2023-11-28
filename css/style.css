@@ -54,6 +54,10 @@ img {
     width: 70%;
 }
 
+.col-3 {
+    width: calc(100%/3);
+}
+
 /* Utils */
 .fcc {
     display: flex;
@@ -500,11 +504,15 @@ header li {
 }
 
 /* Menu a tendina */
-/* NON COMPLETO PURTROPPO CAUSA TEMPO */
+.borderwide {
+    position: relative;
+}
+
 .borderwide .tendina {
   position: absolute;
   top: 100%;
-  width: 80px;
+  left: 0;
+  right: 0;
   display: none;
   background-color: var(--gray);
 }
